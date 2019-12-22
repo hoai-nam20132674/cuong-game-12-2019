@@ -1,0 +1,117 @@
+* {
+  margin: 0px; 
+  padding: 0px; 
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/background3.jpg);
+  background-size: cover;
+  margin: 0px;
+}
+
+/*.container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}*/
+
+.copy h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+}
+
+.wrapper {
+  margin: 0 0 0px;
+  position: relative;
+}
+
+.pointer-wrapper {
+  position: absolute;
+  top: -37px;
+  left: 50%;
+  z-index: 1;
+  margin-left: -25px;
+}
+
+.button {
+  margin: 0 0 0px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: -40px;
+  margin-right: -40px;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+  background: #e01a22;
+  border: 2px solid #51b706;
+}
+.btn:hover {
+  background: #51b706;
+  border: 2px solid #e01a22;
+}
+.btn:focus {
+  outline: 0;
+}
+.qoobee-display-none {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  body {
+    background-image: url(../images/background-mobile.jpg);
+    background-size: cover;
+    height: 100%;
+    margin: 0px;
+  }
+  .container {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+    background-image: url(../images/background-ipad.jpg);
+    background-size: cover;
+    height: 100%;
+    margin: 0px;
+  }
+  .container {
+    width: 80%;
+    padding-top: 100px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-image: url(../images/background-ipad.jpg);
+    background-size: cover;
+    height: 100%;
+    margin: 0px;
+  }
+  .container {
+    width: 80%;
+    padding-top: 160px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body {
+    background-image: url(../images/background3.jpg);
+    background-size: cover;
+    height: 100%;
+    margin: 0px;
+  }
+  .container {
+    padding-top: 20px;
+  }
+}
