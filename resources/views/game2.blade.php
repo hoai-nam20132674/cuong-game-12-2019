@@ -143,7 +143,7 @@
                     <div class="pointer-wrapper">
                         <img src="{{asset('images/pointer.png')}}" style="width: 50px;" alt="pointer">
                     </div>
-                    <img width="100%" src="{{asset('images/vong-quay.png')}}" alt="spping wheel" class="wheel">
+                    <img width="100%" src="{{asset('images/vong-quay2.png')}}" alt="spping wheel" class="wheel">
                     <div class="button">
                         <button class="btn" id="{{Auth::user()->id}}" style="font-weight: 800;">QUAY</button>
                         <img class="qoobee-display-none" src="{{asset('images/qoobee.gif')}}" width="80px" alt="placeholder+image">
