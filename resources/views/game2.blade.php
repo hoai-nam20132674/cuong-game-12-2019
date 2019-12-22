@@ -108,17 +108,20 @@
             <!-- particles -->
             <div id="particles-js"></div>
 
-    		<div class="container">
+    		<div class="container cuong1">
     			<div class="text-center caption mt-30">
                     <h4>CHƠI GAME NGAY</h4>
                     <h1 class="cd-headline clip">
                         <span class="blc">Nhận QUÀ LIỀN TAY</span>
                         <br>
-                        <span class="cd-words-wrapper">
-                          <b class="is-visible">1 VOUCHER GIẢM GIÁ 2TR</b>
-                          <b>1 BAO DA</b>
-                          <b>1 SẠC CỐC</b>
-                          <b>1 MÓC KHÓA VÀNG</b>
+                        <span class="cd-words-wrapper" style="color: #d8b402;">
+                          <b class="is-visible">Iphone 11 trị giá 30.000.000đ</b>
+                          <b>Bao da Handmade lên tới 3.500.000 đồng</b>
+                          <b>Gói bảo hành 1 năm trị giá lên tới 2.000.000đ</b>
+                          <b>Voucher 1.000.000 đồng</b>
+                          <b>Spa miễn phí 1 năm trị giá tới 1.500.000đ</b>
+                          <b>01 hộp phụ kiện cao cấp lên tới 5.000.000đ</b>
+                          <b>Voucher 500.000 đồng</b>
                         </span>
                     </h1>
                     <div class="row">
@@ -126,11 +129,27 @@
                             <p>We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design & web development services.</p>
                         </div>
                     </div>
-                    <a href="#0" class="butn butn-light mt-30">
+                    <a href="#0" class="butn butn-light mt-30 start">
                         <span data-scroll-nav="1">BẮT ĐẦU NGAY</span>
                     </a>
                 </div>
     		</div>
+
+            <div class="container2 cuong2" style="z-index: 2;">
+                <div class="copy m-t-100">
+
+                </div>
+                <div class="wrapper">
+                    <div class="pointer-wrapper">
+                        <img src="{{asset('images/pointer.png')}}" style="width: 50px;" alt="pointer">
+                    </div>
+                    <img width="100%" src="{{asset('images/vong-quay.png')}}" alt="spping wheel" class="wheel">
+                    <div class="button">
+                        <button class="btn" id="{{Auth::user()->id}}" style="font-weight: 800;">QUAY</button>
+                        <img class="qoobee-display-none" src="{{asset('images/qoobee.gif')}}" width="80px" alt="placeholder+image">
+                    </div>
+                </div>
+            </div>
 
             <div class="curve curve-bottom curve-center"></div>
     	</header>
@@ -144,20 +163,7 @@
         ==== Start Hero -->
 
         
-  
-            <div class="copy m-t-100">
-
-            </div>
-            <div class="wrapper">
-                <div class="pointer-wrapper">
-                    <img src="{{asset('images/pointer.png')}}" width="50px" alt="pointer">
-                </div>
-                <img width="100%" src="{{asset('images/vong-quay.png')}}" alt="spping wheel" class="wheel">
-                <div class="button">
-                    <button class="btn" id="{{Auth::user()->id}}">QUAY</button>
-                    <img class="qoobee-display-none" src="{{asset('images/qoobee.gif')}}" width="80px" alt="placeholder+image">
-                </div>
-            </div>
+        
 
         
 
@@ -245,6 +251,18 @@
         <script src="{{asset('game/js/scripts.js')}}"></script>
 
         <script  src="{{asset('game/script.js')}}"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".cuong2").hide();
+            });
+            $(document).on('click', '.start', function(event) {
+                event.preventDefault();
+                $(".cuong1").hide();
+                $(".cuong2").show();
+            });
+
+        </script>
 
         
     </body>
