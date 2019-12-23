@@ -22,7 +22,7 @@ Route::group(['prefix'=>'game', 'middleware'=>'auth'],function(){
 	Route::get('admin/danh-sach-khach-hang',['as'=>'listUser','uses'=>'gameController@listUser']);
 	Route::get('admin/them-khach-hang',['as'=>'addUser','uses'=>'gameController@addUser']);
 	Route::post('admin/postAddUser',['as'=>'postAddUser','uses'=>'gameController@postAddUser']);
-	Route::get('qua-giang-sinh',['as'=>'gameShow','uses'=>'gameController@game']);
+	Route::get('quay-nhanh-tay-nhan-ngay-qua-khung',['as'=>'gameShow','uses'=>'gameController@game']);
 	Route::get('finish/{id}',['as'=>'finish','uses'=>'gameController@finish']);
 	Route::get('phanthuong/{phanthuong}',['as'=>'phanthuong','uses'=>'gameController@phanthuong']);
 });

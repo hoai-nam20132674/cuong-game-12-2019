@@ -90,7 +90,7 @@ class AuthController extends Controller
                 return redirect('game/admin/danh-sach-khach-hang');
             }
             if(Auth::user()->status ==0){
-                return redirect('game/qua-giang-sinh');
+                return redirect()->route('gameShow');
             }
             else{
                 Auth::logout();

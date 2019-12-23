@@ -335,7 +335,7 @@ $(".btn").click(function(){
     $(".btn").css("display","none");
     var spin = (Math.random() * 10) * 36;
   
-        while(spin<315){
+        while((spin > 90 && spin <=135) || (spin > 225 && spin <=270)){
           spin = (Math.random() * 10) * 36;
         }
            $(".wheel").rotate({
@@ -348,7 +348,7 @@ $(".btn").click(function(){
             $(".wheel").stopRotate();
             
             $(".qoobee-display-none").css("display","block");
-            if(spin>=0 && spin<45) {
+            if(spin>0 && spin<=45) {
               var id = $(".btn").attr("id");
               var phanthuong = 1;
               $.ajax({
@@ -363,7 +363,14 @@ $(".btn").click(function(){
                 cache:true,
                 data:{"id":id},
               });
-              alert("Chúc mừng: Quý khách đã trúng thưởng phần quà là 1 chiếc điện thoại Nokia 6700");
+              Swal.fire({
+                title: 'CHÚC MỪNG',
+                text: 'Phần thưởng của quý khách là 1 bao da trị giá đến 3.000.000đ',
+                imageUrl: 'http://slux.vn/uploads/images/products/bao-da-Vertu-Signature-S-da-da-dieu-khong-nap-nau.jpg',
+                imageWidth: 400,
+                imageHeight: '',
+                imageAlt: 'Custom image',
+              })
             }
             if(spin>=45 && spin<90) {
               var id = $(".btn").attr("id");
@@ -380,7 +387,14 @@ $(".btn").click(function(){
                 cache:true,
                 data:{"id":id},
               });
-              alert("Chúc mừng: Quý khách đã trúng phần quà là 1 Gift Voucher trị giá 500.000đ cho lần mua hàng kế tiếp");
+              Swal.fire({
+                title: 'CHÚC MỪNG',
+                text: 'Phần thưởng của quý khách là 1 Voucher trị giá 500.000đ',
+                imageUrl: 'http://www.coxs-steakhouse.com/uploads/1/1/8/0/118004307/s488655362246096578_p1_i1_w564.png',
+                imageWidth: 400,
+                imageHeight: '',
+                imageAlt: 'Custom image',
+              })
             }
             if(spin>=90 && spin<135) {
               var id = $(".btn").attr("id");
@@ -397,7 +411,14 @@ $(".btn").click(function(){
                 cache:true,
                 data:{"id":id},
               });
-              alert("Chúc mừng: Quý khách đã trúng phần quà là 1 gói spa vệ sinh lau máy miễn phí 1 năm");
+              Swal.fire({
+                title: 'CHÚC MỪNG',
+                text: 'Phần thưởng của quý khách là 1 điện thoại iphone 11 pro max trị giá 30.000.000đ',
+                imageUrl: 'https://didongviet.vn/pub/media/catalog/product//i/p/iphone-11-pro-max-64gb-2-sim.jpg',
+                imageWidth: 400,
+                imageHeight: '',
+                imageAlt: 'Custom image',
+              })
             }
             if(spin>=135 && spin<180) {
               var id = $(".btn").attr("id");
@@ -414,7 +435,14 @@ $(".btn").click(function(){
                 cache:true,
                 data:{"id":id},
               });
-              alert("Chúc mừng: Quý khách đã trúng phần quà là một móc khóa rồng");
+              Swal.fire({
+                title: 'CHÚC MỪNG',
+                text: 'Phần thưởng của quý khách là 1 hộp phụ kiện cao cấp',
+                imageUrl: 'https://media.karousell.com/media/photos/products/2017/10/26/authentic_vertu_box_1509024014_aa599044.jpg',
+                imageWidth: 400,
+                imageHeight: '',
+                imageAlt: 'Custom image',
+              })
             }
             if(spin>=180 && spin<225) {
               var id = $(".btn").attr("id");
@@ -431,7 +459,14 @@ $(".btn").click(function(){
                 cache:true,
                 data:{"id":id},
               });
-              alert("Chúc mừng: Quý khách đã trúng phần quà là 1 Gift Voucher trị giá 500.000đ cho lần mua hàng kế tiếp");
+              Swal.fire({
+                title: 'CHÚC MỪNG',
+                text: 'Phần thưởng của quý khách là 1 Voucher trị giá 1.000.000đ',
+                imageUrl: 'http://www.coxs-steakhouse.com/uploads/1/1/8/0/118004307/s488655362246096578_p1_i1_w564.png',
+                imageWidth: 400,
+                imageHeight: '',
+                imageAlt: 'Custom image',
+              })
             }
             if(spin>=225 && spin<270) {
               var id = $(".btn").attr("id");
@@ -448,7 +483,14 @@ $(".btn").click(function(){
                 cache:true,
                 data:{"id":id},
               });
-              alert("Chúc mừng: Quý khách đã trúng phần quà là 1 bao da Handmade");
+              Swal.fire({
+                title: 'CHÚC MỪNG',
+                text: 'Phần thưởng của quý khách là 1 điện thoại iphone 11 pro max trị giá 30.000.000đ',
+                imageUrl: 'https://cdn.fptshop.com.vn/Uploads/Originals/2019/9/11/637037687763926758_11-pro-max-xanh.png',
+                imageWidth: 400,
+                imageHeight: '',
+                imageAlt: 'Custom image',
+              })
             }
             if(spin>=270 && spin<315) {
               var id = $(".btn").attr("id");
@@ -465,7 +507,14 @@ $(".btn").click(function(){
                 cache:true,
                 data:{"id":id},
               });
-              alert("Chúc mừng: Quý khách đã trúng phần quà là 1 Gift Voucher trị giá 500.000đ cho lần mua hàng kế tiếp");
+              Swal.fire({
+                title: 'CHÚC MỪNG',
+                text: 'Phần thưởng của quý khách là 1 gói bảo hành 1 năm trị giá đến 2.000.000đ',
+                imageUrl: 'https://candientuquochung.com/wp-content/uploads/2019/04/Setting-icon-250x250.png',
+                imageWidth: 400,
+                imageHeight: '',
+                imageAlt: 'Custom image',
+              })
             }
             if(spin>=315 && spin<360) {
               var id = $(".btn").attr("id");
@@ -482,7 +531,14 @@ $(".btn").click(function(){
                 cache:true,
                 data:{"id":id},
               });
-              alert("Chúc mừng: Quý khách đã trúng phần quà là 1 gói bảo hành 5 năm tại Slux+");
+              Swal.fire({
+                title: 'Chúc mừng!',
+                text: 'Phần thưởng của quý khách là 1 gói Spa miễn phí 1 năm trị gái đến 1.500.000đ',
+                imageUrl: 'https://lh3.googleusercontent.com/Arlu-VhDLZNHFjT7ayNnuZkmrnyYp59zBqm3pU6nLaNwRNNrbJ7cEn8CEDTSJwDFSw',
+                imageWidth: 400,
+                imageHeight: '',
+                imageAlt: 'Custom image',
+              })
             }
             console.log(spin);
         }, 8000);
